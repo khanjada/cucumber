@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.503">
+    <testcase classname="Demo QA Application Test Cases" name="Test case1: Add book to the profile" time="0.247">
+        <failure message="The driver executable does not exist: /usr/local/bin/chromedriver" type="java.lang.IllegalStateException"><![CDATA[Given Opening the browser...................................................failed
+And Enter username..........................................................skipped
+And Enter password..........................................................skipped
+When Click login............................................................skipped
+When Click bookstore........................................................skipped
+And Enter search text as "Git"..............................................skipped
+And Click search result as "Git"............................................skipped
+Then Get title of the book..................................................skipped
+Then Get publisher of the book..............................................skipped
+When Scroll to add to your collection.......................................skipped
+Then Click to add to your collection........................................skipped
+Then Handle alart...........................................................skipped
+And Click logout............................................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: /usr/local/bin/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at wrappers.GenericWrappers.invokeApp(GenericWrappers.java:90)
+	at stepdefinitions.CommonSteps.opening_the_browser(CommonSteps.java:12)
+	at ✽.Opening the browser(file:///Users/hurayra/Documents/AllProject/Cucumber/src/main/java/feature/TestCase1.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Demo QA Application Test Cases" name="Test case2: Add book to the profile" time="0.019">
+        <failure message="The driver executable does not exist: /usr/local/bin/chromedriver" type="java.lang.IllegalStateException"><![CDATA[Given Opening the browser...................................................failed
+And Enter username..........................................................skipped
+And Enter password..........................................................skipped
+When Click login............................................................skipped
+When Click bookstore........................................................skipped
+And Enter search text as "Designing"........................................skipped
+And Click search result as "Designing"......................................skipped
+Then Get title of the book..................................................skipped
+Then Get publisher of the book..............................................skipped
+When Scroll to add to your collection.......................................skipped
+Then Click to add to your collection........................................skipped
+Then Handle alart...........................................................skipped
+And Click logout............................................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: /usr/local/bin/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at wrappers.GenericWrappers.invokeApp(GenericWrappers.java:90)
+	at stepdefinitions.CommonSteps.opening_the_browser(CommonSteps.java:12)
+	at ✽.Opening the browser(file:///Users/hurayra/Documents/AllProject/Cucumber/src/main/java/feature/TestCase1.feature:28)
+]]></failure>
+    </testcase>
+    <testcase classname="Demo QA Application Test Cases" name="Test case3: Add book to the profile" time="0.008">
+        <failure message="The driver executable does not exist: /usr/local/bin/chromedriver" type="java.lang.IllegalStateException"><![CDATA[Given Opening the browser...................................................failed
+And Enter username..........................................................skipped
+And Enter password..........................................................skipped
+When Click login............................................................skipped
+When Click bookstore........................................................skipped
+And Enter search text as "Learning".........................................skipped
+And Click search result as "Learning".......................................skipped
+Then Get title of the book..................................................skipped
+Then Get publisher of the book..............................................skipped
+When Scroll to add to your collection.......................................skipped
+Then Click to add to your collection........................................skipped
+Then Handle alart...........................................................skipped
+And Click logout............................................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: /usr/local/bin/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at wrappers.GenericWrappers.invokeApp(GenericWrappers.java:90)
+	at stepdefinitions.CommonSteps.opening_the_browser(CommonSteps.java:12)
+	at ✽.Opening the browser(file:///Users/hurayra/Documents/AllProject/Cucumber/src/main/java/feature/TestCase1.feature:50)
+]]></failure>
+    </testcase>
+</testsuite>

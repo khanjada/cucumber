@@ -1,0 +1,577 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-07T15:39:50.321Z",
+        "line": 22,
+        "name": "Test case1: Add book to the profile",
+        "description": "",
+        "id": "demo-qa-application-test-cases;test-case1:-add-book-to-the-profile;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: /usr/local/bin/chromedriver\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat wrappers.GenericWrappers.invokeApp(GenericWrappers.java:90)\n\tat stepdefinitions.CommonSteps.opening_the_browser(CommonSteps.java:12)\n\tat ✽.Opening the browser(file:///Users/hurayra/Documents/AllProject/Cucumber/src/main/java/feature/TestCase1.feature:6)\n",
+              "duration": 159752000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Opening the browser",
+            "match": {
+              "location": "stepdefinitions.CommonSteps.opening_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 283000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Enter username",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.enter_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Enter password",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Click login",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 253000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Click bookstore",
+            "match": {
+              "location": "stepdefinitions.ProfileSteps.i_click_bookstore()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Enter search text as \"Git\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Git",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.ProfileSteps.enter_search_text_as_Git(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Click search result as \"Git\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Git",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.BooksSteps.click_search_result_as_Git(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Get title of the book",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.get_title_of_the_book()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 221000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Get publisher of the book",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.get_publisher_of_the_book()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 200000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Scroll to add to your collection",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.scroll_to_add_to_your_collection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Click to add to your collection",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.click_to_add_to_your_collection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 156000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Handle alart",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.handle_alart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Click logout",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.click_logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          },
+          {
+            "name": "@Order(1)"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T15:39:50.590Z",
+        "line": 44,
+        "name": "Test case2: Add book to the profile",
+        "description": "",
+        "id": "demo-qa-application-test-cases;test-case2:-add-book-to-the-profile;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: /usr/local/bin/chromedriver\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat wrappers.GenericWrappers.invokeApp(GenericWrappers.java:90)\n\tat stepdefinitions.CommonSteps.opening_the_browser(CommonSteps.java:12)\n\tat ✽.Opening the browser(file:///Users/hurayra/Documents/AllProject/Cucumber/src/main/java/feature/TestCase1.feature:28)\n",
+              "duration": 1343000,
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "Opening the browser",
+            "match": {
+              "location": "stepdefinitions.CommonSteps.opening_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Enter username",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.enter_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 910000,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Enter password",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 315000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Click login",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Click bookstore",
+            "match": {
+              "location": "stepdefinitions.ProfileSteps.i_click_bookstore()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119000,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Enter search text as \"Designing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Designing",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.ProfileSteps.enter_search_text_as_Git(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3090000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Click search result as \"Designing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Designing",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.BooksSteps.click_search_result_as_Git(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Get title of the book",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.get_title_of_the_book()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 387000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Get publisher of the book",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.get_publisher_of_the_book()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139000,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Scroll to add to your collection",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.scroll_to_add_to_your_collection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 508000,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "Click to add to your collection",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.click_to_add_to_your_collection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 127000,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Handle alart",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.handle_alart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 113000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Click logout",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.click_logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          },
+          {
+            "name": "@Order(2)"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-07T15:39:50.618Z",
+        "line": 66,
+        "name": "Test case3: Add book to the profile",
+        "description": "",
+        "id": "demo-qa-application-test-cases;test-case3:-add-book-to-the-profile;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: /usr/local/bin/chromedriver\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat wrappers.GenericWrappers.invokeApp(GenericWrappers.java:90)\n\tat stepdefinitions.CommonSteps.opening_the_browser(CommonSteps.java:12)\n\tat ✽.Opening the browser(file:///Users/hurayra/Documents/AllProject/Cucumber/src/main/java/feature/TestCase1.feature:50)\n",
+              "duration": 1306000,
+              "status": "failed"
+            },
+            "line": 50,
+            "name": "Opening the browser",
+            "match": {
+              "location": "stepdefinitions.CommonSteps.opening_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130000,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "Enter username",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.enter_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125000,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "Enter password",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141000,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "Click login",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101000,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "Click bookstore",
+            "match": {
+              "location": "stepdefinitions.ProfileSteps.i_click_bookstore()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110000,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "Enter search text as \"Learning\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Learning",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.ProfileSteps.enter_search_text_as_Git(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104000,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "Click search result as \"Learning\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Learning",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.BooksSteps.click_search_result_as_Git(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113000,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "Get title of the book",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.get_title_of_the_book()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112000,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "Get publisher of the book",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.get_publisher_of_the_book()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 102000,
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "Scroll to add to your collection",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.scroll_to_add_to_your_collection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97000,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "Click to add to your collection",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.click_to_add_to_your_collection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 106000,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "Handle alart",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.handle_alart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96000,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "Click logout",
+            "match": {
+              "location": "stepdefinitions.BookResultSteps.click_logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag3"
+          },
+          {
+            "name": "@Order(3)"
+          }
+        ]
+      }
+    ],
+    "name": "Demo QA Application Test Cases",
+    "description": "",
+    "id": "demo-qa-application-test-cases",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/feature/TestCase1.feature",
+    "tags": []
+  }
+]
